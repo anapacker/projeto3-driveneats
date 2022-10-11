@@ -4,9 +4,14 @@
 
 
 header{
+    width: 100%;
     background-color: #CF2B2B;
     display: flex;
     align-items: center;
+    position: fixed;
+    z-index: 1;
+    top:0
+
     
 }
 h1{
@@ -21,4 +26,59 @@ h2{
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     margin: 0 0 10px 20px;
+}
+main{
+    width: 100%;
+    background-color:brown ;
+
+}
+section{
+    background-color: coral;
+    
+}
+
+.box-todos-os-pratos{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.caixa-prato{
+    background-color: burlywood;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-around;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+}
+.caixa-prato img{
+    width: 144px;
+    height: 87px;
+    border: 4px;
+    margin: 12px;
+}
+h3{
+    font-size: 26px;
+    font-family: 'Righteous', cursive;
+    color: #333333;
+    margin: 120px 0 10px 20px;
+    
+}
+h4{
+    font-size: 16px;
+    color: #333333;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 0 5px 12px;
+
+}
+.caixa-prato p{
+    width: 140px;
+    font-family: 'Roboto', sans-serif;
+    color:#A6A6A6;
+    font-size: 15px;
+    margin: 0 0 5px 12px;
+
+
 }
