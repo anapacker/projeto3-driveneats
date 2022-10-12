@@ -30,7 +30,7 @@ h2{
 main{
     width: 100%;
     background-color:brown ;
-
+    margin-top: 115px;
 }
 section{
     background-color: coral;
@@ -40,8 +40,10 @@ section{
 .box-todos-os-pratos{
     background-color: aliceblue;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    overflow-x:scroll;
+    margin-left: 12px;
 }
 .caixa-prato{
     background-color: burlywood;
@@ -51,6 +53,7 @@ section{
     /* align-items: center; */
     justify-content: space-around;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    margin: 0 8px;
 }
 .caixa-prato img{
     width: 144px;
@@ -62,8 +65,8 @@ h3{
     font-size: 26px;
     font-family: 'Righteous', cursive;
     color: #333333;
-    margin: 120px 0 10px 20px;
-    
+    /* margin: 120px 0 10px 20px; */
+    margin-left:20px ;
 }
 h4{
     font-size: 16px;
@@ -80,5 +83,35 @@ h4{
     font-size: 15px;
     margin: 0 0 5px 12px;
 
+
+}
+
+footer{
+    background-color: lightslategray;
+    position: fixed;
+    z-index: 4;
+    height: 92px;
+    bottom:0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.botao-fechar-pedido{
+    text-align: center;
+    background-color: green;
+    width: 100%;
+    max-width: 600px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border:none;
+    margin: 0 auto;
+
+
+}
+
+h5{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
 
 }
