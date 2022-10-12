@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
 }
-b{
+strong{
     font-weight: bold;
 }
 body{
@@ -79,17 +79,17 @@ h4{
     margin: 0 0 5px 12px;
 
 }
-p .valor{
-    color: #333333;
-}
+
 .caixa-produto p{
     width: 140px;
     font-family: 'Roboto', sans-serif;
     color:#A6A6A6;
     font-size: 15px;
     margin: 0 0 5px 12px;
+}
 
-
+.valor strong{
+    color: #000000;
 }
 
 footer{
