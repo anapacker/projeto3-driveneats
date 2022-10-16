@@ -1,14 +1,25 @@
+
+let tituloPrato;
+let tituloSuco;
+let tituloPudim;
+
+// console.log(caixaPrato);
+
 function selecionarPrato(pratoSelecionado) {
     const pratoSelecionadoAnteriormente = document.querySelector('.caixa-prato .selecionado');
     if (pratoSelecionadoAnteriormente !== null) {
         pratoSelecionadoAnteriormente.classList.remove('selecionado');
     }
-    const existePratoSelecionado = document.querySelector(".box-opcoes .selecionado");
+    const existePratoSelecionado = document.querySelector(".box-todas-as-sopas .selecionado");
     if (existePratoSelecionado) {
         existePratoSelecionado.classList.remove("selecionado");
     }
-
     pratoSelecionado.classList.add('selecionado');
+
+    tituloPrato = pratoSelecionado.querySelector('h4').innerHTML;
+
+
+    botaoFecharPedidoAtivado();
 }
 
 function selecionarSuco(sucoSelecionado) {
@@ -17,14 +28,18 @@ function selecionarSuco(sucoSelecionado) {
         sucoSelecionadoAnteriormente.classList.remove('selecionado');
     }
 
-    const existeSucoSelecionado = document.querySelector(".box-opcoes .selecionado");
+    const existeSucoSelecionado = document.querySelector(".box-todas-as-bebidas .selecionado");
     if (existeSucoSelecionado) {
         existeSucoSelecionado.classList.remove("selecionado");
     }
 
-
-
     sucoSelecionado.classList.add('selecionado');
+
+    tituloSuco = sucoSelecionado.querySelector('h4').innerHTML;
+
+
+
+    botaoFecharPedidoAtivado();
 }
 
 function selecionarSobremesa(sobremesaSelecionado) {
@@ -33,12 +48,42 @@ function selecionarSobremesa(sobremesaSelecionado) {
         sobremesaSelecionadoAnteriormente.classList.remove('selecionado');
     }
 
-    const existeSobremesaSelecionado = document.querySelector(".box-opcoes .selecionado");
+    const existeSobremesaSelecionado = document.querySelector(".box-todas-as-sobremesas .selecionado");
     if (existeSobremesaSelecionado) {
         existeSobremesaSelecionado.classList.remove("selecionado");
     }
-
     sobremesaSelecionado.classList.add('selecionado');
+
+    tituloPudim = sobremesaSelecionado.querySelector('h4').innerHTML;
+
+
+    botaoFecharPedidoAtivado();
+
+}
+
+
+function botaoFecharPedidoAtivado() {
+
+    console.log(tituloPrato, tituloSuco, tituloPudim);
+
+    if (tituloPrato !== undefined) {
+
+        if (tituloSuco !== undefined) {
+            if (tituloPudim !== undefined) {
+
+                const botao = document.querySelector('.botao-fechar-pedido');
+                botao.classList.add('ativo');
+
+                botao.innerHTML = "Fazer o pedido";
+
+                console.log('liberar botao')
+            }
+        }
+    }
+}
+
+function botaoFecharPedido() {
+    console.log('fechar pedido');
 }
 
 
@@ -58,25 +103,3 @@ function selecionarSobremesa(sobremesaSelecionado) {
 
 
 
-
-
-
-
-
-// const pratoSelecionadoArteriormente = document.querySelector('.caixa-prato .selecionado');
-    // if (pratoSelecionadoArteriormente !== null) {
-    //     pratoSelecionadoArteriormente.classList.remove('selecionado');
-    // }
-    // pratoSelecionado.classList.toggle('selecionado');
-    // const valorPratoSelecionado = document.querySelector('.caixa-prato .selecionado .valor-sopa');
-    // console.log(valorPratoSelecionado);
-
-    // const valor = document.querySelector('.valor-sopa')}
-
-
-// function selecionarPrato() {
-//     const produtoSelecionadoArteriormente = document.querySelector(".caixa-prato ");
-//     produtoSelecionadoArteriormente.classList.toggle("selecionado")
-
-
-// }
