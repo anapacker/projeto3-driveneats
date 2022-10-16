@@ -48,7 +48,7 @@ section{
     overflow-x:scroll;
     margin-left: 12px;
 }
-.caixa-produto{
+.caixa-prato{
     background-color: #ffffff;
     border-radius: 9px;
     display: flex;
@@ -56,7 +56,7 @@ section{
     justify-content: space-around;
     margin: 0 8px;
 }
-.caixa-produto img{
+.caixa-prato img{
     width: 144px;
     height: 87px;
     border: 4px;
@@ -78,7 +78,7 @@ h4{
 
 }
 
-.caixa-produto p{
+.caixa-prato p{
     width: 140px;
     font-family: 'Roboto', sans-serif;
     color:#A6A6A6;
@@ -86,10 +86,70 @@ h4{
     margin: 0 0 5px 12px;
 }
 
-.valor strong{
-    color: #000000;
+/* SUCOS */
+
+.caixa-suco{
+    background-color: #ffffff;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 8px;
 }
 
+.caixa-suco img{
+    width: 144px;
+    height: 87px;
+    border: 4px;
+    margin: 12px;
+}
+
+.caixa-suco p{
+    width: 140px;
+    font-family: 'Roboto', sans-serif;
+    color:#A6A6A6;
+    font-size: 15px;
+    margin: 0 0 5px 12px;
+}
+
+/* SOBREMESAS */
+.caixa-pudim{
+    background-color: #ffffff;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 8px;
+}
+
+.caixa-pudim img{
+    width: 144px;
+    height: 87px;
+    border: 4px;
+    margin: 12px;
+}
+
+.caixa-pudim p{
+    width: 140px;
+    font-family: 'Roboto', sans-serif;
+    color:#A6A6A6;
+    font-size: 15px;
+    margin: 0 0 5px 12px;
+}
+
+
+/* .valor strong{
+    color: #000000;
+} */
+.valor-sopa strong{
+    color:#333333
+}
+.valor-sucos strong{
+    color:#333333
+}
+.valor-pudim strong{
+    color:#333333
+}
 footer{
     background-color: #ffffff;
     position: fixed;
@@ -134,4 +194,8 @@ h5{
     border: 5px solid green;
     border-radius: 9px;
 
+}
+.check{
+    color: green;
+    font-size: 12px;
 }
