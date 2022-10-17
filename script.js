@@ -2,6 +2,7 @@
 let tituloPrato;
 let tituloSuco;
 let tituloPudim;
+let linkWhatsapp;
 
 // console.log(caixaPrato);
 
@@ -76,14 +77,16 @@ function botaoFecharPedidoAtivado() {
 
                 botao.innerHTML = "Fazer o pedido";
 
-                console.log('liberar botao')
             }
         }
     }
 }
 
 function botaoFecharPedido() {
-    console.log('fechar pedido');
+    console.log("oi");
+    let mensagem = encodeURIComponent(`Olá, gostaria de fazer o pedido: \n - prato: ${tituloPrato}\n - Bebida: ${tituloSuco}\n - Sobremesa: ${tituloPudim}\n TOTAL: R$ ${0.0}`)
+    linkWhatsapp = "https://wa.me/5547992578604?text=" + mensagem;
+    console.log(linkWhatsapp)
 }
 
 
